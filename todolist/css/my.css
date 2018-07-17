@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.modal-body {
+  color: black;
+}
+.modal-title {
+  color: black;
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
