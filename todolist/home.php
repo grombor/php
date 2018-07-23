@@ -40,31 +40,33 @@ else {
 
       <!-- Navbar -->
       <nav class="navbar fixed-top navbar-dark">
-        You are logged in as <?php echo $_SESSION['username'] ?>.
-        <a href="https://www.profitaccumulator.co.uk/oddsmatching/">Oddsmatching</a>
-        <a href="https://www.profitaccumulator.co.uk/calculator/">Calculator</a>
-        <a href="http://forum.profitaccumulator.co.uk/">Forum</a>
+        <span>You are logged in as <?php echo "<b>".$_SESSION['username']."</b>" ?></span>
+        <a href="https://poczta.nazwa.pl/">My mail</a>
+        <a href="https://www.youtube.com/">YT</a>
+        <a href="http://www.colorzilla.com/gradient-editor/">CSS Gradient</a>
         <a href="https://smarkets.com/account/statement">Smarket</a>
         <a class="navbar-brand" href="logout.php"> | Log out</a>
       </nav>
-      <h4 class="mt-5">To do list:</h4>
+      <h4 class="my-5 pt-5">To do list:</h4>
        <a class="btn btn-sm btn-outline-secondary" href="add.php">Add new task</a>
         <!-- Start table -->
-        <table class="table table-dark mt-5">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Date</th>
-              <th scope="col">Content</th>
-              <th scope="col">Link</th>
-              <th scope="col">Progress</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
+        <div class="table-responsive">
+          <table class="table table-dark mt-5">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Date</th>
+                <th scope="col">Content</th>
+                <th scope="col">Link</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
           <tbody>
             <?php printRow($result);?>
-        </tbody>
-  </table>
+          </tbody>
+        </table>
+      </div>
   <!-- end table -->
     </div>
 

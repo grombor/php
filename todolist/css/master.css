@@ -1,10 +1,17 @@
+body {
+  background-color: rgb(69,72,77);
+  }
+
 .hidden {
   display: none;
 }
+
 .error {
   color: red;
   font-size: 0.8rem;
 }
-.d1 {
+
+div.loginpage {
   background-color: red;
+  color: blue;
 }
